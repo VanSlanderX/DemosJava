@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: postconstructdemo
+    timeout: 500
+
+application:
+  vars:
+    var1: carlos
+    myVar2: coronado
+    my-var-3: mendoza
