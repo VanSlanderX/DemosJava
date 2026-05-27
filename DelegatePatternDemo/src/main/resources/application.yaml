@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: delegatepatterndemo
+    timeout: 500 
