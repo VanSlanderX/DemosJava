@@ -17,7 +17,7 @@ public class ProductApiImpl implements ProductDelegate {
         return productService.create(product);
     }
 
-    public String findProduct(String indice) {
+    public Product findProduct(String indice) {
         System.out.println("ProductApiImpl - findProduct() con indice:" + indice);
         return productService.retrieve(indice);
     }

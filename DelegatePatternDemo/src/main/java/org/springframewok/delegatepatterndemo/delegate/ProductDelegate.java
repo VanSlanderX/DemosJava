@@ -10,9 +10,9 @@ public interface ProductDelegate {
         return resultado;
     }
 
-    default String findProduct(String indice) {
+    default Product findProduct(String indice) {
         System.out.println("ProductDelegate - findProduct() con indice:" + indice);
-        String resultado = null;
+        Product resultado = new Product();
         return resultado;
     }
 }

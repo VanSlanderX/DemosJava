@@ -7,13 +7,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductServiceImpl implements ProductService {
 
+    @Override
     public String create(Product product) {
         System.out.println("ProductServiceImpl - create() con product: " + product);
         return "Exito al crear producto";
     }
 
-    public String retrieve(String indice) {
+    @Override
+    public Product retrieve(String indice) {
         System.out.println("ProductServiceImpl - retrieve() con indice: " + indice);
-        return "Exito al obtener producto";
+        return new Product(1, "Tablet", "Samsung Tab S10 FE");
     }
 }
